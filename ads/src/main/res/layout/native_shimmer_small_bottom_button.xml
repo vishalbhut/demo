@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.facebook.shimmer.ShimmerFrameLayout android:id="@+id/shimmerEffect" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/_105sdp" app:shimmer_auto_start="true" app:shimmer_base_color="#ffcccccc"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="vertical" android:id="@+id/fb_background" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginRight="@dimen/_5sdp" android:layout_marginBottom="@dimen/_3sdp" android:layout_above="@+id/button_ll">
+            <TextView android:textSize="12.0sp" android:textColor="#ff131622" android:gravity="center" android:id="@+id/ad_attribution" android:background="#ffafbddf" android:layout_width="@dimen/_18sdp" android:layout_height="wrap_content" android:foreground="#ff989898" android:text="Ad" android:layout_alignParentLeft="true" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/_20sdp" android:layout_marginTop="@dimen/_3sdp">
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@+id/native_ad_icon" android:layout_width="@dimen/_40sdp" android:layout_height="@dimen/_40sdp" android:foreground="#ff989898" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/_5sdp">
+                    <TextView android:textSize="@dimen/_12sdp" android:textStyle="bold" android:textColor="#ffafbddf" android:ellipsize="end" android:id="@+id/native_ad_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_25sdp" android:foreground="#ff989898" android:lines="1" />
+                    <TextView android:textSize="@dimen/_9sdp" android:textColor="#ffafbddf" android:ellipsize="end" android:id="@+id/native_ad_social_context" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_2sdp" android:layout_marginBottom="@dimen/_2sdp" android:foreground="#ff989898" android:lines="1" android:layout_marginVertical="@dimen/_2sdp" />
+                    <TextView android:textSize="@dimen/_8sdp" android:textColor="#ffafbddf" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/native_ad_body" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="#ff989898" android:lines="3" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/button_ll" android:layout_width="match_parent" android:layout_height="@dimen/_35sdp" android:layout_marginLeft="@dimen/_5sdp" android:layout_marginRight="@dimen/_5sdp" android:layout_marginBottom="@dimen/_2sdp" android:layout_alignParentBottom="true" android:layout_marginHorizontal="@dimen/_5sdp">
+            <androidx.cardview.widget.CardView android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/btn_card" android:layout_width="match_parent" android:layout_height="match_parent" app:cardCornerRadius="@dimen/_15sdp">
+                <androidx.appcompat.widget.AppCompatButton android:textSize="@dimen/_14sdp" android:textColor="#ff131622" android:gravity="center" android:id="@+id/native_ad_call_to_action" android:background="#ffafbddf" android:layout_width="match_parent" android:layout_height="match_parent" android:foreground="#ff989898" android:text="" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </RelativeLayout>
+</com.facebook.shimmer.ShimmerFrameLayout>
